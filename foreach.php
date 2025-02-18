@@ -9,11 +9,11 @@
 <body>   
   <p>
        <?php
-$user_datas = ["なまえ:" => "なまえ:たまねぎ", "<br>", "値段:" => "値段:200", "<br>", "産地:" => "産地:北海道"];
+$user_data = ["なまえ" => "たまねぎ",  "値段" =>"200", " 産地" => "北海道"];
 
-foreach($user_datas as $user_data){
+foreach($user_data as $key => $value){
     echo "<br>";
-    echo $user_data;
+    echo "{$key}:{$value} <br>";
     
 }
 ?>
