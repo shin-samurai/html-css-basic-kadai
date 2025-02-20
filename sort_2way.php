@@ -13,29 +13,31 @@
 // ソートする配列を宣言
 $nums = [15, 4, 18, 23, 10 ];
 
-$array = $nums;
+$array1 = $nums;
+$array2 = $nums;
 $order = [true, false];
 
-function sort_2way($array, $order) {
+function sort_2way($array1, $order) {
 
 
-if ($order === true){
-sort($array);
-foreach ($array as $num){
+if ($order){
+sort($array1);
+foreach ($array1 as $num){
 echo "昇順ソート <br>";
     echo $num;
 }
- if ($order === false) {
- rsort($array);
- foreach ($nums as $num){
+}
+ else {
+ rsort($array2);
+ foreach ($array2 as $num){
  echo "降順ソート <br>";
          echo $num;
 }
 }
 }
-}
-sort_2way($array, $order);
- 
+
+sort_2way($array1, $order);
+ sort_2way($array2, $order);
 
         ?>
     </p>
