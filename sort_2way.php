@@ -12,26 +12,29 @@
         // ここにコードを書いていく
 // ソートする配列を宣言
 $nums = [15, 4, 18, 23, 10 ];
+
 $array = $nums;
+$order = [true, false];
 
 function sort_2way($array, $order) {
 
 
 if ($order === true){
-sort($nums);
+sort($array);
+foreach ($array as $num){
 echo "昇順ソート <br>";
-}
-foreach ($nums as $num){
     echo $num;
 }
  if ($order === false) {
- rsort($nums);
- echo "降順ソート <br>";
- }
+ rsort($array);
  foreach ($nums as $num){
-    echo $num;
+ echo "降順ソート <br>";
+         echo $num;
 }
 }
+}
+}
+sort_2way($array, $order);
  
 
         ?>
