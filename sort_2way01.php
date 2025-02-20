@@ -24,11 +24,11 @@ echo "昇順ソート <br>";
 }
  else {
     rsort($array);
-    }   echo "降順ソート <br>";
- 
+       echo "降順ソート <br>";
+ }
  foreach ($array as $num){
     echo $num . "<br>";
-         }        echo $num;
+         }        
         }
 
 
