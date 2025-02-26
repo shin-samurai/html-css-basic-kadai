@@ -21,21 +21,21 @@
                  $this->price = $price;
              }
 //メソッドを定義する
-             public function set_name(string name){
+             public function set_name(string $name){
                  $this->name = $name;
              }
              public function show_name() {
-                 echo $this->name . '<br>';
+                 echo $this->price . '<br>';
              }
          }
 
          // インスタンス化する
-         $yakisoba = new Food("やきそば", 200);
-$yakisoba->show_name();
+         $yakisoba = new Food("yakisoba", 200);
+$yakisoba->show_price();
 //メソッドを実行する
-$yakisoba->name = "やきそば";
+//$yakisoba->name = $name;
          // プロパティを出力する
-         print_r($name);
+         print_r($yakisoba);
          ?>
      </p>
      <p>
@@ -55,11 +55,11 @@ $weight) {
                  $this->weight = $weight;
              }
 //メソッドを定義する
-             public function set_name(string name){
+             public function set_name(string $name){
 $this->name = $name;
 }
              public function show_height(){
-                 echo $this->height  "<br>";
+                 echo $this->height . "<br>";
              }
          }
 
@@ -69,16 +69,16 @@ $this->name = $name;
 ややメソッドを実行する
          
 $lion->show_height()2
-$lion->name = "lion";
+
 
 // プロパティの値を出力する
-         print_r($name);
+         print_r($lion);
          ?>
      </p>
 
 
-       ?>
-   </p>
+       
+   
 </body>
 
 </html>
