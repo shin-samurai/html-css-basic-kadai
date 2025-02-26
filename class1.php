@@ -24,18 +24,19 @@
              public function set_name(string $name){
                  $this->name = $name;
              }
-             public function show_name() {
+             public function show_price() {
                  echo $this->price . '<br>';
              }
          }
 
          // インスタンス化する
          $yakisoba = new Food("yakisoba", 200);
-$yakisoba->show_price();
 //メソッドを実行する
 //$yakisoba->name = $name;
          // プロパティを出力する
          print_r($yakisoba);
+$yakisoba->show_price();
+
          ?>
      </p>
      <p>
@@ -48,8 +49,7 @@ $yakisoba->show_price();
              private $weight;
 
              // コンストラクタを定義する
-             public function __construct(string $name, int $height, int 
-$weight) {
+             public function __construct(string $name, int $height, int $weight) {
                  $this->name = $name;
                  $this->height = $height;
                  $this->weight = $weight;
@@ -64,15 +64,16 @@ $this->name = $name;
          }
 
          // インスタンス化する
-         $lion = new Animal('lion', 136, 200);
+         $lion = new Animal("lion", 136, 200);
 
-ややメソッドを実行する
-         
-$lion->show_height()2
 
 
 // プロパティの値を出力する
          print_r($lion);
+
+//メソッドを実行する
+         $lion->show_height();
+
          ?>
      </p>
 
